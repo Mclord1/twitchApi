@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+* {
+    font-family: Maven Pro, sans-serif;
+}
+
+body {
+    background: #323232;
+}
+
+.container {
+    width: 35%;
+    margin: 20px auto;
+    color: white;
+    padding: 0;
+    background-color: #162233;
+    box-shadow: -10px -5px 12px rgba(0, 0, 0, 0.25), 10px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.viewer {
+    padding: 50px 0;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu {
+    margin: 30px 0;
+    display: block;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid white;
+    padding: 30px 0px;
+    background-color: white;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu ul li:first-child {
+    float: left;
+}
+
+.menu ul li:last-child {
+    float: right;
+    margin-right: 40px;
+}
+
+.fa {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.search {
+    text-align: center;
+    display: none;
+    margin: 40px 0 0;
+}
+
+#search {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 100px;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    background-color: #162334;
+}
+
+#search:focus {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #162334;
+    color: white;
+    padding: 5px 25px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.active {
+    border: 1px solid white;
+}
+
+.channel {
+    text-decoration: none;
+    color: white;
+}
+
+.list a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.bHeader {
+    background-color: #192a43;
+    margin: 25px 0 0;
+}
+
+.bHeader > h4 {
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+    padding: 15px 40px;
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    margin-left: -65px;
+    bottom: 20px;
+    border: 4px solid #152132;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#title {
+    margin-left: 70px;
+}
+
+#title h4 {
+    padding: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+#title p {
+    color: #bdbdbd;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+#image {
+    margin-right: 50px;
+}
+
+hr {
+    margin-top: 0;
+    border-top: 2px solid #6441a3;
+}
+
+/* Mobile Screens  */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 830px) {
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .fa {
+        margin-top: 5px;
+    }
+
+    .menu li a img {
+        height: 25px;
+        width: 100px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #image {
+        margin-right: 20px;
+    }
+
+    #image img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .new {
+        margin-left: 25px;
+        bottom: 55px;
+    }
+
+    #title h4 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
