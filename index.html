@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="twitch.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -16,28 +17,27 @@
             <div class="menu">
                 <ul>
                     <li><i class="fa fa-refresh" id="faLeft" aria-hidden="true"></i></li>
-                    <li><a href="#"><img src="https://goo.gl/io9iaT" height="40px" width="130px" title="Twitch TV"></a>
-                    </li>
+                    <li><a href="#"><img src="https://goo.gl/io9iaT" height="40px" width="130px" title="Twitch TV"></a></li>
                     <li><i class="fa fa-search" id="faRight" aria-hidden="true"></i></li>
                 </ul>
             </div>
         </nav>
         <div class="buttons">
             <button class="btn btn-default active" id="allBtn">All</button>
-            <button class="btn btn-default" id="greenBtn">Online</button>
-            <button class="btn btn-default" id="redBtn">Offline</button>
+            <button class="btn btn-default" id="greenBtn"><span class="status green" ></span>Online</button>
+            <button class="btn btn-default" id="redBtn"><span class="status red"></span>Offline</button>
         </div>
         <div class="search input-group">
             <input type="text" id="search" placeholder="Search Channels">
         </div>
-        <!-- 		Channels -->
+<!--        Channels -->
         <div class="row">
-            <div class="col list" id="channels">
-                <!-- 				Channel header -->
+            <div class="col list" id= "channels">
+<!--                Channel header -->
                 <div class="bHeader">
                     <h4>CHANNEL LIST</h4>
                 </div>
-                <!-- 		Channel List -->
+                <!--        Channel List -->
             </div>
         </div>
     </div>
