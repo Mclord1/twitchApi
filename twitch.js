@@ -1,6 +1,6 @@
 var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "henk", "dreamhack", "twitch", "bazza87", "lirik"];
-    
-function getChannels() {                         
+ 
+$('document').ready(function() {                    
     $.each(channels, function( index, channel ) {
     // Create url with parameters needed
         function makeUrl(type, channel) {
@@ -35,17 +35,11 @@ function getChannels() {
                         "</div>" +
                     "</div><hr></a>" 
                 )
-            });
-            
+            });     
         });
     });
-};
 
-$('document').ready(function() {
-    getChannels();
-});
-
-$('#greenBtn').click(function() {
+    $('#greenBtn').click(function() {
     $('.online').show();
     $('.offline').hide();
 });
@@ -77,4 +71,5 @@ $('#search').keyup(function(){
             (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
         });
    };
+});
 });
